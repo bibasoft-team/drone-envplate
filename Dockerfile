@@ -8,4 +8,4 @@ RUN curl -sLo /usr/local/bin/ep https://github.com/kreuzwerker/envplate/releases
 COPY ./run.sh .
 RUN chmod +x run.sh
 
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT bash /ep/run.sh
